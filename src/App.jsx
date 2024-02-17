@@ -14,9 +14,11 @@ function App() {
         </div>
 
         <div className="imgContainer">
-          {images.map(img,index) => {
-            <img src= {img} key={index} alt="landscape"/>
-          }
+          {
+            images.map((img, index) => (
+              <img key={index} src= {img}/>
+            )
+            )
           }
         </div>
       </div>
